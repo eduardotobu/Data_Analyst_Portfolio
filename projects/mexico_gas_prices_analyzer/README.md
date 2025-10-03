@@ -1,4 +1,8 @@
 
+## Preguntas Clave
+- ¿Cómo varían los precios de gasolina por estado, municipio y marca?
+- ¿Cómo han cambiado con el tiempo?
+- ¿Cómo recomendar la estación más económica considerando el costo de traslado?
 
 ## License
 
