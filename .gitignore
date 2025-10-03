@@ -1,0 +1,4 @@
+# Ignore large data files
+mexico_gas_price_analyzer/data/raw/
+*.zip
+*.tar.gz
