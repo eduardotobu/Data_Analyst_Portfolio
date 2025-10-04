@@ -73,19 +73,20 @@ def extract_prices_xml(filepath: Path) -> pd.DataFrame:
     
     return pd.DataFrame(data)
 
-
-def save_daily_snapshot(df_places: pd.DataFrame, df_prices: pd.DataFrame) -> None:
+def save_daily_snapshot(df_places: pd.DataFrame, df_prices: pd.DataFrame, output_dir: str = 'data/raw') -> None:
     """Merge and save today's gas prices snapshot."""
     logger.info("Creating daily snapshot")
     
     df_snapshot = df_places.merge(df_prices, how='left', on='place_id')
     df_snapshot['date'] = date.today()
     
-    output_file = f'data/raw/gas_prices_{date.today().strftime("%Y%m%d")}.csv.gz'
+    # Create directory if it doesn't exist
+    Path(output_dir).mkdir(parents=True, exist_ok=True)
+    
+    output_file = Path(output_dir) / f'gas_prices_{date.today().strftime("%Y%m%d")}.csv.gz'
     df_snapshot.to_csv(output_file, index=False, compression='gzip')
     
     logger.info(f"Daily snapshot saved to {output_file}")
-
 
 def load_and_clean_historical(filepath: Path) -> pd.DataFrame:
     """Load and clean historical gas prices data."""
@@ -165,6 +166,8 @@ def combine_all_data(
     
     all_dfs = daily_snapshots + [df_historical]
     df_combined = pd.concat(all_dfs, ignore_index=True)
+
+    df_combined['date'] = pd.to_datetime(df_combined['date'], format='ISO8601').dt.date
     
     logger.info(f"Combined dataset contains {len(df_combined):,} rows")
     
