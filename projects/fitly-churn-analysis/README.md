@@ -83,10 +83,14 @@ Based on the analysis, the following actions are recommended:
 ---
 
 ## 👤 Author
-**[Your Name]**
-* [LinkedIn Profile](https://linkedin.com/in/yourprofile)
-* [Portfolio Website](https://yourportfolio.com)
+**Eduardo Torres B.**
+* [LinkedIn Profile](https://linkedin.com/in/eduardotobu)<br>
+
+<div style="display:none">
+ * [Portfolio Website](https://yourportfolio.com)
 * [Email](mailto:youremail@example.com)
+</div>
+
 
 ---
 

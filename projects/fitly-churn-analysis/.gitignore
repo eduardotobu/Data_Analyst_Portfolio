@@ -1,0 +1,60 @@
+# --- 🐍 Python & uv Core ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+.python-version
+
+# --- 📓 Jupyter Notebooks ---
+# Ignora las carpetas de autoguardado (generan mucho ruido en git)
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+# Opcional: Ignorar salidas HTML o PDF si las generas
+*.html
+*.pdf
+
+# --- 📊 Datos (BLOQUEO DE SEGURIDAD) ---
+# Ignora formatos de datos comunes para evitar fugas o repos pesados
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.json
+*.xml
+*.parquet
+*.feather
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+
+# Imágenes generadas (Opcional: Descomenta si generas miles de gráficas)
+# *.png
+# *.jpg
+# *.svg
+
+# Archivos comprimidos
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Carpetas específicas de datos (Buenas prácticas)
+data/
+datasets/
+raw_data/
+processed_data/
+outputs/
+models/
+
+# --- 🔒 Secretos y Configuración (MUY IMPORTANTE) ---
+# Nunca subas contraseñas o claves de API
+.env
+.env.local
+config.py
+secrets.yaml
+credentials.json
+
+# --- 💻 Sistema Operativo ---
+.DS_Store
+Thumbs.db

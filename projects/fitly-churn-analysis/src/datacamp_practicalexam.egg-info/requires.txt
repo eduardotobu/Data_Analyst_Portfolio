@@ -1,0 +1,4 @@
+jupyter>=1.1.1
+matplotlib>=3.10.8
+pandas>=3.0.0
+seaborn>=0.13.2
