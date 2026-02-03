@@ -44,4 +44,6 @@ Trabajo recurrente una vez comenzando el análisis.
 | **Quitar librería** | `uv remove plotly` |
 | **Ejecutar script** | `uv run script.py` |
 | **Reparar entorno** | `uv sync` |
+<br>
 
+Cada que abras un nuevo proyecto, corre uv run y luego conectate al kernel.

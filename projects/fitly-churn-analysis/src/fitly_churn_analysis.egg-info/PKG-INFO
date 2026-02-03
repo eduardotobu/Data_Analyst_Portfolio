@@ -1,5 +1,5 @@
 Metadata-Version: 2.4
-Name: datacamp-practicalexam
+Name: fitly-churn-analysis
 Version: 0.1.0
 Summary: Add your description here
 Requires-Python: >=3.12
@@ -7,6 +7,8 @@ Description-Content-Type: text/markdown
 License-File: LICENSE
 Requires-Dist: jupyter>=1.1.1
 Requires-Dist: matplotlib>=3.10.8
+Requires-Dist: notebook>=7.5.3
+Requires-Dist: numpy>=2.4.2
 Requires-Dist: pandas>=3.0.0
 Requires-Dist: seaborn>=0.13.2
 Dynamic: license-file
