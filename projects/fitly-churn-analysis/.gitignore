@@ -15,7 +15,7 @@ __pycache__/
 
 # --- 📊 Datos (BLOQUEO DE SEGURIDAD) ---
 # Ignora formatos de datos comunes para evitar fugas o repos pesados
-*.csv
+#*.csv
 *.tsv
 *.xlsx
 *.xls
@@ -40,7 +40,7 @@ __pycache__/
 *.7z
 
 # Carpetas específicas de datos (Buenas prácticas)
-data/
+#data/
 datasets/
 raw_data/
 processed_data/
@@ -51,7 +51,7 @@ models/
 # Nunca subas contraseñas o claves de API
 .env
 .env.local
-config.py
+#config.py
 secrets.yaml
 credentials.json
 
