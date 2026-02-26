@@ -6,15 +6,15 @@ __pycache__/
 .python-version
 
 # --- 📓 Jupyter Notebooks ---
-# Ignora las carpetas de autoguardado (generan mucho ruido en git)
+# Ignore autosave folders (they generate a lot of noise in git)
 .ipynb_checkpoints/
 */.ipynb_checkpoints/
-# Opcional: Ignorar salidas HTML o PDF si las generas
+# Optional: Ignore HTML or PDF outputs if you generate them
 *.html
 *.pdf
 
-# --- 📊 Datos (BLOQUEO DE SEGURIDAD) ---
-# Ignora formatos de datos comunes para evitar fugas o repos pesados
+# --- 📊 Data (SECURITY BLOCK) ---
+# Ignore common data formats to prevent leaks or heavy repositories
 *.csv
 *.tsv
 *.xlsx
@@ -28,18 +28,18 @@ __pycache__/
 *.h5
 *.hdf5
 
-# Imágenes generadas (Opcional: Descomenta si generas miles de gráficas)
+# Generated images (Optional: Uncomment if you generate thousands of plots)
 # *.png
 # *.jpg
 # *.svg
 
-# Archivos comprimidos
+# Compressed files
 *.zip
 *.tar.gz
 *.rar
 *.7z
 
-# Carpetas específicas de datos (Buenas prácticas)
+# Specific data folders (Best practices)
 data/
 datasets/
 raw_data/
@@ -47,14 +47,14 @@ processed_data/
 outputs/
 models/
 
-# --- 🔒 Secretos y Configuración (MUY IMPORTANTE) ---
-# Nunca subas contraseñas o claves de API
+# --- 🔒 Secrets and Configuration (VERY IMPORTANT) ---
+# Never upload passwords or API keys
 .env
 .env.local
 config.py
 secrets.yaml
 credentials.json
 
-# --- 💻 Sistema Operativo ---
+# --- 💻 Operating System ---
 .DS_Store
 Thumbs.db

@@ -7,12 +7,14 @@ from pathlib import Path
 # We go up 3 levels: config.py -> utils -> src -> PROJECT_ROOT
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 
+
 # ==========================================
 # 2. DIRECTORY STRUCTURE
 # ==========================================
 # Define your main folders relative to the root
 DATA_DIR = PROJECT_ROOT / "data"
 FIGURES_DIR = PROJECT_ROOT / "images"  # or "figures"
+
 
 # ==========================================
 # 3. FILE PATHS (The "Config" part)
@@ -33,17 +35,18 @@ INTERMEDIATE_DATA_PATH = INTERIM_DATA_DIR / "fitly_clean_data.csv"
 PROCESSED_DATA_DIR = DATA_DIR / "processed"
 CLEAN_DATA_PATH = PROCESSED_DATA_DIR / "fitly_clean_data.csv"
 
+
 # ==========================================
 # 4. BUSINESS CONSTANTS (The "Logic" part)
 # ==========================================
 # Use UPPER_CASE for all constants
 
 # Column Names (prevent typos in your code)
-#COL_USER_ID = "user_id"
-#COL_DATE = "date"
-#COL_STATUS = "subscription_status"
+COL_USER_ID = "user_id"
+COL_DATE = "date"
+COL_STATUS = "subscription_status"
 
 # Business Rules
-#STATUS_ACTIVE = "Active"
-#STATUS_CHURNED = "Churned"
-#MIN_AGE_THRESHOLD = 18
+STATUS_ACTIVE = "Active"
+STATUS_CHURNED = "Churned"
+MIN_AGE_THRESHOLD = 18
