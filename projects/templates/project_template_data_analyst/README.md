@@ -96,3 +96,46 @@ Based on the analysis, the following actions are recommended:
 
 ## 📝 License
 This project is licensed under the [MIT License](LICENSE).
+
+
+fuera de formato, estructura de la carpeta ideal
+
+my_portfolio_project/
+│
+├── conf/                 <- Configuration and business rules.
+│   ├── parameters.yaml   <- Business logic (e.g., churn thresholds, regions).
+│   └── custom.mplstyle   <- (Optional) Matplotlib style sheet for charts.
+│
+├── data/                 <- Local data storage (STRICTLY IGNORED IN GIT!).
+│   ├── 01_raw/           <- Immutable original data files.
+│   ├── 02_interim/       <- Partially cleaned/transformed data.
+│   └── 03_processed/     <- Final datasets ready for analysis.
+│
+├── notebooks/            <- Numbered Jupyter notebooks telling the data story.
+│   ├── 01_data_cleaning_and_prep.ipynb
+│   └── 02_exploratory_analysis.ipynb
+│
+├── queries/              <- SQL scripts for extraction and transformation.
+│   ├── create_base_tables.sql
+│   └── cohort_analysis.sql
+│
+├── reports/              <- Final deliverables for stakeholders.
+│   ├── figures/          <- High-res PNG/SVG exports of your best charts.
+│   └── Executive_Summary_Report.pdf
+│
+├── src/                  <- Your modular, reusable Python package.
+│   └── my_portfolio_project/
+│       ├── __init__.py
+│       ├── utils.py      <- Your YAML loader and path-finding functions.
+│       ├── theme.py      <- NEW: Sets Pandas limits and brand color palettes!
+│       ├── clean.py      <- Reusable data transformation functions.
+│       └── plot.py       <- Wrappers for generating consistent charts.
+│
+├── tests/                <- Proves to headhunters that your code is reliable.
+│   └── test_clean.py     <- Simple tests checking for nulls or correct types.
+│
+├── .env                  <- Database passwords and API keys (IGNORED IN GIT).
+├── .gitignore            <- Prevents you from leaking secrets or massive data.
+├── pyproject.toml        <- Modern project metadata and dependencies (managed by uv).
+├── uv.lock               <- Exact package versions locked by uv for reproducibility.
+└── README.md             <- The front door to your portfolio.
