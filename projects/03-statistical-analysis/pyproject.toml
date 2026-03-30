@@ -1,0 +1,13 @@
+[project]
+name = "statistical-analysis-project"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas",
+    "numpy",
+    "scipy",
+    "statsmodels",
+    "matplotlib",
+    "seaborn",
+    "jupyter",
+]

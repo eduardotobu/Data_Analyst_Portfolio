@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# uv
+.python-version
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data in project folders (large files — don't commit per-project data)
+projects/**/data/**/*.csv
+projects/**/data/**/*.xlsx
+projects/**/data/**/*.xls
+projects/**/data/**/*.json
+projects/**/data/**/*.parquet
+projects/**/data/**/*.h5
+projects/**/data/**/*.hdf5
+projects/**/data/**/*.db
+projects/**/data/**/*.sqlite
+
+# Shared data is tracked via Git LFS (see .gitattributes)
+# Add exceptions for small shared files you want in the repo:
+# !data/shared/geo/us_states.csv
+
+# Keep gitkeep files
+!.gitkeep
+
+# Environment variables
+.env
+
+# Logs
+*.log
